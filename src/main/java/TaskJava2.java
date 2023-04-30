@@ -11,12 +11,19 @@ public class TaskJava2 {
         listLink.add("orange");
         listLink.add("pineapple");
         listLink.add("lemon");
+
         for (String element : listLink) {
             System.out.println(element);
         }
+
         System.out.println("__________________________________________________________________");
-        for (int i = listLink.size() - 1; i >= 0; i--) {
-            String element = listLink.get(i);
+
+        turnedList(listLink);
+    }
+
+    public static void turnedList (LinkedList<String> list ) {
+        for (int i = list.size() - 1; i >= 0; i--) {
+            String element = list.get(i);
             System.out.println(element);
         }
     }
